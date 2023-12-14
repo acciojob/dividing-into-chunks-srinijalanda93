@@ -4,7 +4,7 @@ const divide = (arr, n) => {
   let trackSum=0 ,ans=[] ,subArr=[];
 	//corner case
 	if(arr.length===0) return [];
-	for(int i=0;i<arr.length;i++){
+	for(let i=0;i<arr.length;i++){
 		if(trackSum+arr[i] <=n){
 			//push in the subArr
 			subArr.push(arr[i]);
