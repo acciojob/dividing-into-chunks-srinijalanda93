@@ -14,7 +14,7 @@ const divide = (arr, n) => {
       trackSum = trackSum + arr[i];
     } else {
       ans.push(subArr);
-      trackSum = arr[i]; // Start a new trackSum
+      trackSum = arr[i];
       subArr = [arr[i]]; // Start a new subArr with the current element
     }
   }
@@ -26,4 +26,4 @@ const divide = (arr, n) => {
 };
 
 const n = prompt("Enter n: ");
-alert(JSON.stringify(divide(arr, n)));
+console.log(JSON.stringify(divide(arr, n)));
