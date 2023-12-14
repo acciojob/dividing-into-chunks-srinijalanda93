@@ -14,10 +14,12 @@ const divide = (arr, n) => {
 		else{
 			ans.push(subArr)
 			trackSum=0;
-			subArr=arr[i];
+			subArr = [arr[i]];
 		}
 	}
-	return ans.push(subArr);
+	ans.push(subArr);
+  
+  return ans;
 };
 
 const n = prompt("Enter n: ");
